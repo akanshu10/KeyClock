@@ -1,0 +1,14 @@
+server:
+  port: 9000
+  
+spring:
+  h2:
+    console:
+      enabled: true
+      
+keycloak:
+  realm: demo
+  auth-server-url: http://localhost:8080
+  resource: spring-keyclock
+  public-client: true
+  bearer-only: true
